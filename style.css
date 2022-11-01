@@ -158,3 +158,9 @@
 .edit-mode .edit-mode-label {
   display: none;
 }
+
+.task-edit {
+  color: #000;
+  border: none;
+  background: none;
+}
