@@ -108,6 +108,10 @@ var editTask = function () {
         label.classList.remove("task-edit");
     }
 
+    if (document.getElementById("completed-tasks")) {
+      label.classList.add("label");  
+    }
+
     //toggle .editmode on the parent.
     listItem.classList.toggle("edit-mode");
 };
@@ -133,6 +137,7 @@ var taskCompleted = function () {
     var listItem = this.parentNode;
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
+
 }
 
 
